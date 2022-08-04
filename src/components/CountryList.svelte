@@ -59,7 +59,7 @@ onMount(
     .search-filter input {
         width: 30%;
         background-color: hsl(var(--elements-color));
-        color: hsl(var(--text-color));
+        color: inherit;
         border: none;
         padding: 1em;
     }

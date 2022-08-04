@@ -68,7 +68,7 @@ import axios from 'axios';
         background-color: hsl(var(--elements-color));
         border: none;
         padding-block: 0.5em;
-        color: hsl(var(--text-color));
+        color: inherit;
         border-radius: 3px;
         box-shadow: 5px 5px 5px 5px hsla(0, 0, 0, 0.8);
     }
@@ -99,7 +99,7 @@ import axios from 'axios';
         background-color: hsl(var(--elements-color));
         border: none;
         padding: 0.3em;
-        color: hsl(var(--text-color));
+        color: black;
         border-radius: 3px;
         box-shadow: 5px 5px 5px 5px hsla(0, 0, 0, 0.8);
     }
