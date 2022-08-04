@@ -20,7 +20,7 @@
 
 <style>
     .country-card {
-        background-color: hsl(var(--dark-mode-elements));
+        background-color: hsl(var(--elements-color));
         width: 22%;
         display: flex;
         flex-direction: column;
@@ -38,4 +38,11 @@
     .country-details h3 {
         padding-block: 1em;
     }
+
+    @media (max-width: 375px) {
+	.country-card {
+		width: 100%;
+        border-radius: 10px;
+	}
+}
 </style>

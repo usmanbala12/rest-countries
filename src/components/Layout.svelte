@@ -1,8 +1,25 @@
-<div>
+<script>
+    import Fa from 'svelte-fa';
+    import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
+    let classMode = ''
+    let classNote = 'Light Mode'
+    const toggleMode = () => {
+        if(classMode === 'light-mode'){
+            classNote = 'Light Mode'
+            return classMode = ''
+        }
+        else {
+            classMode = 'light-mode'
+            classNote = 'Dark Mode'
+        }
+    }
+</script>
+
+<div class={classMode}>
     <div class="top-bar">
         <span>Where in the world?</span>
         <div class="display-mode">
-            <i class="fa-solid fa-moon" style="color: white; background-color: white;"></i>Dark Mode
+            <button on:click={toggleMode}><Fa icon={classMode === 'light-mode' ? faMoon : faSun}/>  {classNote}</button>
         </div>
     </div>
     <slot></slot>
@@ -12,8 +29,7 @@
     .top-bar {
         display: flex;
         padding-inline: 2.5em;
-        background-color: hsl(var(--dark-mode-elements));
-        color: hsl(var(--dark-mode-text));
+        background-color: hsl(var(--elements-color));
         align-items: center;
     }
     .top-bar span {
@@ -24,5 +40,15 @@
     }
     .top-bar .display-mode {
         padding-block: 0.5em;
+    }
+
+    .display-mode button {
+        width: max-content;
+        border: none;
+        background-color: hsl(var(--elements-color));
+        color: inherit;
+        font-family: inherit;
+        padding: 0.5em;
+        border-radius: 3px;
     }
 </style>

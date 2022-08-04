@@ -65,10 +65,10 @@ import axios from 'axios';
     .country > button {
         margin-block: 2em;
         width: 10%;
-        background-color: hsl(var(--dark-mode-elements));
+        background-color: hsl(var(--elements-color));
         border: none;
         padding-block: 0.5em;
-        color: hsl(var(--dark-mode-text));
+        color: hsl(var(--text-color));
         border-radius: 3px;
         box-shadow: 5px 5px 5px 5px hsla(0, 0, 0, 0.8);
     }
@@ -96,15 +96,50 @@ import axios from 'axios';
     .border-countries > button {
         width: auto;
         margin-inline: 0.5em;
-        background-color: hsl(var(--dark-mode-elements));
+        background-color: hsl(var(--elements-color));
         border: none;
         padding: 0.3em;
-        color: hsl(var(--dark-mode-text));
+        color: hsl(var(--text-color));
         border-radius: 3px;
         box-shadow: 5px 5px 5px 5px hsla(0, 0, 0, 0.8);
     }
     .country > button:hover {
         cursor: pointer;
+    }
+
+    @media (max-width: 375px) {
+        .country > button {
+            width: 30%
+        }
+
+        .details {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        .inner-details {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .details-text {
+            width: 100%;
+        }
+        .details-text h2 {
+            margin-block: 1em;
+        }
+        .aux {
+            margin-top: 1.5em;
+        }
+        .details img {
+        width: 100%;
+        height: 100%;
+        }
+        .border-countries {
+            border-bottom: 2em;
+        }
+
     }
 
 </style>
