@@ -39,7 +39,7 @@
         padding-block: 1em;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 430px) {
 	.country-card {
 		width: 100%;
         border-radius: 10px;

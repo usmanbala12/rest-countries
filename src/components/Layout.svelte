@@ -51,4 +51,9 @@
         padding: 0.5em;
         border-radius: 3px;
     }
+    @media (max-width: 430px) {
+        .top-bar span {
+            font-size: 1em;
+        }
+    }
 </style>

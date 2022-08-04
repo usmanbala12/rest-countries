@@ -81,7 +81,7 @@ onMount(
         padding-inline: 1em;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 430px) {
         .search-filter {
             flex-direction: column;
         }

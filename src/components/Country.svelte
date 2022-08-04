@@ -107,7 +107,7 @@ import axios from 'axios';
         cursor: pointer;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 430px) {
         .country > button {
             width: 30%
         }
@@ -137,7 +137,7 @@ import axios from 'axios';
         height: 100%;
         }
         .border-countries {
-            border-bottom: 2em;
+            padding-bottom: 2em;
         }
 
     }
