@@ -60,6 +60,7 @@ import axios from 'axios';
         flex-direction: column;
         width: 85%;
         margin: 0 auto;
+        height: 100vh;
     }
     
     .country > button {

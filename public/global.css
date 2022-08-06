@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
 :root {
-	--elements-color: 209, 23%, 22%;
-	--background-color: 207, 26%, 17%;
-	--text-color: 0, 0%, 100%;
-	--light-mode-text: 200, 15%, 8%;
-	--light-mode-background: 0, 0%, 95%;
 	--fs-home: 14px;
 	--fs-detail: 16px;
 }
@@ -22,18 +17,23 @@
 
 
 body {
-	background-color: hsl(var(--background-color));
-	color: hsl(var(--text-color));
 	font-family: "Nunito Sans";
 	font-size: var(--fs-home);
 }
 
+.dark-mode {
+	--elements-color: 209, 23%, 22%;
+	--background-color: 207, 26%, 17%;
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(207, 26%, 17%);
+}
+
 .light-mode {
 	--elements-color: 0, 0%, 100%;
-	background-color: hsl(var(--light-mode-background));
+	--background-color: 0, 0%, 95%;
 	color: hsl(var(--light-mode-text));
+	background-color: hsl(0, 0%, 95%);
 	--light-mode-input: 0, 0%, 52%;
-	height: 100vh;
 }
 
 

@@ -1,12 +1,12 @@
 <script>
     import Fa from 'svelte-fa';
     import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
-    let classMode = ''
+    let classMode = 'dark-mode'
     let classNote = 'Light Mode'
     const toggleMode = () => {
         if(classMode === 'light-mode'){
             classNote = 'Light Mode'
-            return classMode = ''
+            return classMode = 'dark-mode'
         }
         else {
             classMode = 'light-mode'
